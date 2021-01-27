@@ -1,0 +1,257 @@
+*{
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo{
+    margin-right: auto;
+}
+
+.nav_links{
+    display: flex;
+}
+
+.nav_links li {
+    padding: 0px 20px;
+  }
+
+a{
+    text-decoration: none;
+    color: #000000;
+    transition: all 0.3s ease 0s;
+}
+
+a:hover{
+    color: rgba(0, 136, 169, 0.8);
+}
+
+.menu{
+    
+
+    display: none;
+}
+
+.blue_btn{
+  height: 38px;
+  padding: 0 25px;
+  background-color: #1D6FF3;
+  color: #000000;
+  border: 1px solid #1D6FF3;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: all 0.5s ease 0s;
+  }
+
+.overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+}
+
+.overlay_active{
+    width: 100%;
+}
+
+.overlay_content {
+    white-space: nowrap;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #000000;
+    cursor: pointer;
+  }
+
+
+
+
+
+.first_banner{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.first_banner_card{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.first_banner_card_text{
+   margin: 0 50px; 
+  max-width: 520px;
+  width: 50%;
+}
+
+.first_banner_card_text h1{
+  margin-bottom: 20px;
+}
+
+.first_banner_card_text a{
+  display: block;
+  color: #1D6FF3;
+  padding: 50px 0 20px;
+}
+
+.first_banner_img{
+  height: auto;
+  max-width: 600px;
+  width: 100%;
+}
+
+.first_banner_card:nth-child(2n){
+  flex-direction: row-reverse;
+}
+
+.from_the_blog{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.blog_cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.blog_card{
+  width: 330px;
+  height: 350px;
+}
+
+.blog_card_text{
+  display: block;
+  position: relative;
+  width: 280px;
+  height: 215px;
+  background-color: #ffff;
+  margin: 0 auto;
+  padding: 5px 15px;
+  top: -70px;
+}
+
+
+.start_learning{  
+  min-height: 280px;
+  height: auto;
+  background-color: #EEEEEE;
+  
+}
+
+.start_learning_content{
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.start_learning_text{
+  display: flex;  
+  flex-direction: column;
+  max-width: 460px;
+  width: 100%;
+  height: auto;
+  margin-left: 70px;
+}
+
+.start_learning_text h1{
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+
+.start_learning_text h3{
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.input_group{
+  display: flex;
+}
+
+input[type="email"]{
+  height: 32px;
+  min-width: 270px;
+}
+
+
+
+footer{
+  margin: 50px auto ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: left;
+}
+
+footer ul{  
+  margin: 30px 0;
+}
+
+footer ul li{
+  margin-top: 20px;
+  width: 285px;
+}
+
+footer ul li:first-child{
+  margin-bottom: 50px;
+}
+
+footer i{
+  margin: 0 5px;
+}
+
+
+  @media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px;
+    }
+    .overlay .close {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .nav_links{
+      display: none;
+    }
+    .menu {
+      display: initial;
+    }
+  }
+  
