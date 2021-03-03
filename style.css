@@ -134,27 +134,41 @@ a:hover{
   flex-direction: row-reverse;
 }
 
+
+/* Blog section */
+
 .from_the_blog{
   width: 80%;
   margin: 0 auto;
+  justify-content: center;
+}
+.from_the_blog h2{
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .blog_cards{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+  /* margin: 0 auto; */
 }
 
 .blog_card{
-  width: 330px;
+  max-width: 330px;
   height: 350px;
+}
+
+.blog_card_img{
+    width: 100%;
+    height: auto;
 }
 
 .blog_card_text{
   display: block;
   position: relative;
-  width: 280px;
+  max-width: 280px;
   height: 215px;
   background-color: #ffff;
   margin: 0 auto;
@@ -163,17 +177,21 @@ a:hover{
 }
 
 
+
+/* Start Learning */
+
 .start_learning{  
   min-height: 280px;
   height: auto;
-  background-color: #EEEEEE;
-  
+  background-color: #EEEEEE;  
+  align-items: center;
+  display: flex;
 }
 
 .start_learning_content{
   width: 80%;
   margin: 0 auto;
-  padding-top: 80px;
+  /* padding-top: 80px; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -184,8 +202,10 @@ a:hover{
   flex-direction: column;
   max-width: 460px;
   width: 100%;
+   
   height: auto;
-  margin-left: 70px;
+  /* margin-left: 70px; */
+  margin-left: 7vw;
 }
 
 .start_learning_text h1{
@@ -200,14 +220,17 @@ a:hover{
 
 .input_group{
   display: flex;
+  max-width: 400px;
+  width: 100%;
+  align-items: center;
 }
 
 input[type="email"]{
   height: 32px;
-  min-width: 270px;
+  width: 270px;
 }
 
-
+/* Footer */
 
 footer{
   margin: 50px auto ;
